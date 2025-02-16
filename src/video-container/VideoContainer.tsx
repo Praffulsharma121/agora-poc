@@ -51,6 +51,9 @@ const VideoContainer: React.FC<VideoContainerProps> = ({ name, channel, onLeave 
               return updatedUsers;
             });
           }
+          if (mediaType === "audio") {
+            user.audioTrack?.play(); // ✅ Play remote audio
+          }
         });
       } catch (error) {
         console.error("Error initializing Agora:", error);
