@@ -52,7 +52,7 @@ const VideoContainer: React.FC<VideoContainerProps> = ({ name, channel, onLeave 
             });
           }
           if (mediaType === "audio") {
-            user.audioTrack?.play(); // ✅ Play remote audio
+            user.audioTrack?.play(); 
           }
         });
       } catch (error) {
